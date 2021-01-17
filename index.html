@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Add delete insert and replace text- by Mediouni Mohamed</title>
+        <meta name="description" content="Practical exercice by the Tunisian 3W Academy">
+        <meta property="og:image" content="https://mmediouni.github.io/adirText/images/cover.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <p>
+        <input id="backgroundColors" value="#FFFFFF" type="color" name=""> Background Color <br>
+        <input id="fontColors" type="color" name=""> Font Color<br>
+        Font size: <input type="range" min="1" max="100" value="16" id="fontSizes"> <em id="afficheurFontsize"></em>
+    </p>
+    <p> 
+		<textarea id="zonetexte" rows="3" cols="30"></textarea> 
+	</p> 
+	<p> 
+		<input id="add" type="radio" name="choix" value="add" checked="">Ajouter 
+		<input id="remove" type="radio" name="choix" value="remove">Supprimer 
+		<input id="insertAt" type="radio" name="choix" value="insertAt">Insérer à 
+		<input id="replace" type="radio" name="choix" value="replace">Remplacer 
+	</p> 
+	<p> 
+		Quel paragraphe ? : <select id="liste"></select>&nbsp; 
+		<button>Tester</button> 
+	</p> 
+	<div id="modifiable"></div> 
+
+
+    <script src="main.js"></script>
+</body>
+</html>
